@@ -5,6 +5,7 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.find(params[:id])
+    @bookmarks = @topic.bookmarks
   end
 
   def new
@@ -25,9 +26,24 @@ class TopicsController < ApplicationController
     end
   end
 
+  def update
+    @bookmarks = Topic.bookmarks.find(params[:id])
+    @bookmarks = @topic.bookmarks
+    @topic.bookmarks.assign_attributes(post_params)
+
+    if @topic.bookmarks.save
+      @topic.bookmarks.labels = Label.update_labels(params[:topic][:bookmark])
+      flash[:notice] = "Bookmark was updated successfully."
+      redirect_to [@topic.bookmarks, @topic]
+    else
+      flash.now[:alert] = "There was an error saving the bookmark. Please try again."
+      render :edit
+    end
+  end
+
   def destroy
-    @topic = Topic.find(params[:id])
-    if @topic.destroy
+    @topic.bookmarks = Topic.find(params[:id])
+    if @topic.bookmarks.destroy
       flash[:notice] = "Topic was successfully deleted."
       redirect_to topics_path
     else
