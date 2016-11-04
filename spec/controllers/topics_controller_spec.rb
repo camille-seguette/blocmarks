@@ -7,7 +7,7 @@ RSpec.describe TopicsController, type: :controller do
       @user = FactoryGirl.create(:user)
       sign_in @user
       @topic = Topic.create!(title: Faker::Lorem.word, user: @user)
-  end
+    end
 
     describe "GET #index" do
       it "returns http success" do
