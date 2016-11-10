@@ -10,5 +10,5 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  post :incoming, 'incoming#create'
+  post :incoming, to: 'incoming#create'
 end
