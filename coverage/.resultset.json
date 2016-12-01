@@ -623,6 +623,12 @@
         1,
         null,
         1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         1,
         null,
         null,
@@ -644,6 +650,11 @@
         null,
         1,
         1,
+        1,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/camille/bloc/code/blocmarks/app/helpers/application_helper.rb": [
@@ -651,6 +662,10 @@
         null
       ],
       "/Users/camille/bloc/code/blocmarks/app/helpers/bookmarks_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/app/helpers/likes_helper.rb": [
         1,
         null
       ],
@@ -728,6 +743,55 @@
         1,
         1,
         1,
+        1,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/spec/controllers/likes_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/app/controllers/likes_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/camille/bloc/code/blocmarks/spec/controllers/topics_controller_spec.rb": [
@@ -930,6 +994,23 @@
         1,
         null
       ],
+      "/Users/camille/bloc/code/blocmarks/spec/models/like_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        2,
+        2,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/app/models/like.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/camille/bloc/code/blocmarks/spec/models/user_spec.rb": [
         1,
         null,
@@ -947,9 +1028,10 @@
         1,
         1,
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1478820658
+    "timestamp": 1480570185
   }
 }
