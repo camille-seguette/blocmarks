@@ -6,11 +6,10 @@ class LikesController < ApplicationController
 
     if like.save
       flash[:notice] = "Bookmark successfully liked."
-      redirect_to :back
     else
       flash[:alert] = "Failed to like this bookmark."
-      redirect_to :back
     end
+    redirect_to @bookmark.topic
   end
 
   def destroy
@@ -20,10 +19,9 @@ class LikesController < ApplicationController
 
     if like.destroy
       flash[:notice] = "Bookmark unliked."
-      redirect_to :back
     else
       flash[:alert] = "Unliking failed."
-      redirect_to :back
     end
+    redirect_to bookmark.topic
   end
 end
