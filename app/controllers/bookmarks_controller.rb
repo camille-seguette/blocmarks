@@ -1,4 +1,5 @@
 class BookmarksController < ApplicationController
+  rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   def new
     @topic = Topic.find(params[:topic_id])
@@ -9,6 +10,7 @@ class BookmarksController < ApplicationController
     @topic = Topic.find(params[:topic_id])
     @bookmark = @topic.bookmarks.build(bookmark_params)
     @bookmark.user = current_user
+    #authorize @bookmark
 
     if @bookmark.save
       flash[:notice] = "Bookmark was saved successfully."
@@ -28,6 +30,7 @@ class BookmarksController < ApplicationController
     @topic = Topic.find(params[:topic_id])
     @bookmark = Bookmark.find(params[:id])
     @bookmark.assign_attributes(bookmark_params)
+    #authorize @bookmark
 
     if @bookmark.save
       flash[:notice] = "Bookmark was updated successfully."
@@ -41,6 +44,7 @@ class BookmarksController < ApplicationController
   def destroy
     @topic = Topic.find(params[:topic_id])
     @bookmark = Bookmark.find(params[:id])
+    #authorize @bookmark
 
     if @bookmark.destroy
       flash[:notice] = "\"#{@bookmark.url}\" was deleted successfully."
@@ -55,5 +59,10 @@ class BookmarksController < ApplicationController
 
   def bookmark_params
     params.require(:bookmark).permit(:url)
+  end
+
+  def user_not_authorized
+    flash[:alert] = "You must be an owner or an admin to do that."
+    redirect_to root_path
   end
 end
