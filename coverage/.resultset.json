@@ -7,10 +7,17 @@
         1,
         null,
         1,
+<<<<<<< HEAD
         2,
         2,
         2,
         2,
+=======
+        1,
+        1,
+        1,
+        0,
+>>>>>>> aee390eeefb3b79e45dd86f6f6cf043c7e913595
         null,
         null,
         1,
@@ -660,7 +667,16 @@
         1,
         null,
         1,
+<<<<<<< HEAD
         1,
+=======
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+>>>>>>> aee390eeefb3b79e45dd86f6f6cf043c7e913595
         null,
         0,
         null,
@@ -679,6 +695,23 @@
         null,
         1,
         null,
+<<<<<<< HEAD
+=======
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+>>>>>>> aee390eeefb3b79e45dd86f6f6cf043c7e913595
         null
       ],
       "/Users/camille/bloc/code/blocmarks/app/controllers/application_controller.rb": [
@@ -686,6 +719,57 @@
         1,
         1,
         1,
+<<<<<<< HEAD
+=======
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/spec/controllers/likes_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/app/controllers/likes_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+>>>>>>> aee390eeefb3b79e45dd86f6f6cf043c7e913595
         null
       ],
       "/Users/camille/bloc/code/blocmarks/app/models/topic.rb": [
@@ -763,10 +847,71 @@
         1,
         0,
         null,
+<<<<<<< HEAD
         null,
         null
       ]
     },
     "timestamp": 1481129536
+=======
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/spec/helpers/welcome_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/spec/models/like_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        2,
+        2,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/app/models/like.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/app/models/topic.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/camille/bloc/code/blocmarks/app/models/bookmark.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1481089796
+>>>>>>> aee390eeefb3b79e45dd86f6f6cf043c7e913595
   }
 }
