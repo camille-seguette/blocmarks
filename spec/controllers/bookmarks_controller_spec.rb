@@ -17,9 +17,16 @@ RSpec.describe BookmarksController, type: :controller do
     end
 
     describe "POST create" do
+<<<<<<< HEAD
       it "creates a like for the current user and current bookmark" do
         expect(@user.likes.find_by_bookmark_id(@bookmark_id)).to be_nil
         post :create, topic_id: @topic.id, user_id: @user.id, bookmark: { url: Faker::Internet.url }
+=======
+      it 'creates a like for the current user and specified bookmark' do
+        expect(@user.likes.find_by_bookmark_id(@bookmark_id)).to be_nil
+        post :create, { bookmark_id: @bookmark.id }
+        expect(@user.likes.find_by_bookmark_id(@bookmark_id)).not_to be_nil
+>>>>>>> aee390eeefb3b79e45dd86f6f6cf043c7e913595
       end
     end
 
